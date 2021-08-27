@@ -9,7 +9,6 @@ public class SnakeAndLadder {
         System.out.println("Welcome to snake and ladder project");
 
         int player1Position = 0;
-// int player2Position = 0;
         while (player1Position < WINNING_POSITION) {
             ++diceCount;
             player1Position = getPosition(player1Position);
