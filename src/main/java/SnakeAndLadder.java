@@ -10,7 +10,11 @@ public class SnakeAndLadder {
                 System.out.println("No Play");
             } else if (checkOption == 1) {
                 System.out.println("Ladder Comes");
-                startPosition += dieRoll;
+                if (startPosition + dieRoll <= 100) {
+                    startPosition += dieRoll;
+                } else if (startPosition + dieRoll > 100) {
+                    continue;
+                }
             } else {
                 System.out.println("Snake Comes");
                 if ((startPosition - dieRoll) < 0) {
